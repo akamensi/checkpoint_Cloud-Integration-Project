@@ -1,7 +1,7 @@
 const { body , validationResult } = require('express-validator')
 
 exports.validSignup = [
-    body('email','Email is not valid').isEmail(),
+    body('email','Emaill is not valid').isEmail(),
     body('password','weak password, min 6 char').isLength(6)
 ]
 
